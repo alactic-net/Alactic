@@ -1,404 +1,558 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Alactic</title>
-  <meta charset="UTF-8">
-  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="vendors/owl-carousel/css/owl.carousel.min.css">
-  <link rel="stylesheet" href="vendors/owl-carousel/css/owl.theme.default.css">
-  <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
-  <link rel="stylesheet" href="vendors/aos/css/aos.css">
-  <link rel="stylesheet" href="css/style.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <meta content="Alactic Business Services" property="og:title" />
-  <meta content="Website | Software | Custom Bots | AI | ML" property="og:description" />
-  <meta content="https://embed.com/this-is-the-site-url" property="og:url" />
-  <meta content="https://embed.com/embedimage.png" property="og:image" />
-  <meta content="#43B581" data-react-helmet="true" name="theme-color" />
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Alactic
+  * Template URL: https://bootstrapmade.com/Alactic-free-multipurpose-html-bootstrap-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
-<body id="body" data-spy="scroll" data-target=".navbar" data-offset="100">
-  <header id="header-section">
-    <nav class="navbar navbar-expand-lg pl-3 pl-sm-0" id="navbar">
-    <div class="container">
-      <div class="navbar-brand-wrapper d-flex w-100" style="display: flex; align-items: center;">
-        <img src="images/logo-black.png" alt="" height='40'>
-        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="mdi mdi-menu navbar-toggler-icon"></span>
-        </button> 
-      </div>
-      <div class="collapse navbar-collapse navbar-menu-wrapper" id="navbarSupportedContent">
-        <ul class="navbar-nav align-items-lg-center align-items-start ml-auto">
-          <li class="d-flex align-items-center justify-content-between pl-4 pl-lg-0">
-            <div class="navbar-collapse-logo">
-              <img src="images/logo-black.png" alt="" height='40'>
-            </div>
-            <button class="navbar-toggler close-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="mdi mdi-close navbar-toggler-icon pl-5"></span>
-            </button>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#header-section">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#features-section">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#case-studies-section">Services</a>  
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#feedback-section">Portfolio</a>
-          </li>
-          <li class="nav-item btn-contact-us pl-4 pl-lg-0">
-            <button class="btn btn-info" data-toggle="modal" data-target="#exampleModal" style="box-shadow: 1px 1px 2.1875rem 1.125rem rgba(0, 140, 255, 0.24);">Contact Us</button>
-          </li>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Alactic</h1>
+        <span>.</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="/" class="active">Home<br></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <!-- <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#team">Team</a></li> -->
+          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li> -->
+          <!-- <li><a href="#contact">Contact</a></li> -->
         </ul>
-      </div>
-    </div> 
-    </nav>   
-  </header>
-  <div class="banner" >
-    <div class="container">
-      <h1 class="font-weight-semibold">One Stop Solution For All <br> Your Business Needs</h1>
-      <h6 class="font-weight-normal text-muted pb-3">Alactic provides all services for an online business,<br> Website Design and Development, SEO, Marketing</h6>
-      <div>
-        <a class="btn btn-opacity-light mr-1" style="color: black; " href="#digital-marketing-section ">View Solutions</a>
-        <a class="btn btn-opacity-success ml-1" style="color: black;"  data-toggle="modal" data-target="#exampleModal" >Get In Touch</a>
-      </div>
-      <!-- <div data-w-id="cd749424-ea4f-2945-4b81-8ec569011acb" class="section thin-section gradient-bar" style="margin-top: 20px;"></div> -->
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
 
-      <!-- <section style="display: flex; align-items: center; justify-content: center; padding-top: 12px; padding-bottom: 10px;">
-        <div style="border-right: 1px solid black; ; width: 100%; margin: 0;"><h5>Website Developement</h5></div>
-        <div style="border-right: 1px solid black; ; width: 100%; margin: 0;"><h5>SEO</h5></div>
-        <div style=" width: 100%; margin: 0;"><h5>Hosting</h5></div>
-      </section> -->
-      
-      <!-- <div data-w-id="cd749424-ea4f-2945-4b81-8ec569011acb" class="section thin-section gradient-bar"></div> -->
-      <img src="images/Group171.svg" alt="" class="img-fluid">
+      <a class="btn-getstarted" href="index.html#about">Contact</a>
+
     </div>
-  </div>
-  <div class="content-wrapper">
-    <div class="container">
-      <section class="features-overview" id="features-section" >
-        <div class="content-header">
-          <h2>How does it works</h2>
-          <h6 class="section-subtitle text-muted">Alactic is a leading provider of online business services,<br>that meets customer's needs.</h6>
-        </div>
-        <div class="d-md-flex justify-content-between">
-          <div class="grid-margin d-flex justify-content-start">
-            <div class="features-width">
-              <img src="images/Group12.svg" alt="" class="img-icons">
-              <h5 class="py-3">Website Designing<br>and Development</h5>
-              <p class="text-muted">Crafting captivating websites that reflect your brand's identity and drive engagement. Let's transform your online presence into a powerful tool for growth.</p>
-              <!-- <a href="#"><p class="readmore-link">Readmore</p></a>   -->
-            </div>
-          </div>
-          <div class="grid-margin d-flex justify-content-center">
-            <div class="features-width">
-              <img src="images/Group7.svg" alt="" class="img-icons">
-              <h5 class="py-3">SEO and<br>Backlinks</h5>
-              <p class="text-muted">Strategic SEO solutions to boost your website's visibility and attract qualified leads. Stay ahead of the competition and maximize your digital impact with our proven techniques.</p>
-              <!-- <a href="#"><p class="readmore-link">Readmore</p></a> -->
-            </div>
-          </div>
-          <div class="grid-margin d-flex justify-content-end">
-            <div class="features-width">
-              <img src="images/Group5.svg" alt="" class="img-icons">
-              <h5 class="py-3">Hosting<br>and Management</h5>
-              <p class="text-muted">Reliable hosting solutions ensuring lightning-fast load times, maximum uptime, and robust security. Focus on your business while we handle the technicalities.</p>
-              <!-- <a href="#"><p class="readmore-link">Readmore</p></a> -->
-            </div>
-          </div>
-          
-        </div>
-      </section>     
-      <section class="digital-marketing-service" id="digital-marketing-section">
-        <div class="row align-items-center">
-          <div class="col-12 col-lg-7 grid-margin grid-margin-lg-0" data-aos="fade-right">
-            <h3 class="m-0">Leading Digital Agency<br>for  Business Solution.</h3>
-            <div class="col-lg-7 col-xl-6 p-0">
-              <p class="py-4 m-0 text-muted">From Landing Pages To Content Monetization</p>
-              <p class="font-weight-medium text-muted">We Offer All The Tools You Need To Reach A Wider Range of Customers Online, From Fully Managing Your Website, Making Your Brand Presence Online, To Content management And Monetization</p>
-            </div>    
-          </div>
-          <div class="col-12 col-lg-5 p-0 img-digital grid-margin grid-margin-lg-0" data-aos="fade-left">
-            <img src="images/Group2.png" alt="" class="img-fluid">
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/hero.png" alt="" data-aos="fade-in">
+
+      <div class="container">
+
+        <div class="row justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-xl-8 col-lg-10">
+            <h2>Powerful Digital Solutions With Alactic<span>.</span></h2>
+            <!-- <p>We are team of talented developers.</p> -->
           </div>
         </div>
-        <div class="row align-items-center">
-          <div class="col-12 col-lg-7 text-center flex-item grid-margin" data-aos="fade-right">
-            
-            <img src="images/Group1.png" alt="" class="img-fluid">
-          </div>
-          <div class="col-12 col-lg-5 flex-item grid-margin" data-aos="fade-left">
-            <h3 class="m-0">We Are Here<br>For all Your Business Needs</h3>
-            <div class="col-lg-9 col-xl-8 p-0">
-              <p class="py-4 m-0 text-muted">Services That No One Offers at An Unbeatable Price</p>
-              <p class="pb-2 font-weight-medium text-muted">Kickstart Your Online Journey With Our Special Landing Pages, The First Step Towards Customer Conversion.</p>
-            </div>
-            <!-- <button class="btn btn-info">View Services</button> -->
-          </div>
-        </div>
-      </section>     
-      <section class="case-studies" id="case-studies-section">
-        <div class="row grid-margin">
-          <div class="col-12 text-center pb-5">
-            <h2>Our Expertise
-            </h2>
-            <h6 class="section-subtitle text-muted">View our Field Of Expertise In Online Business Services
-            </h6>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 stretch-card mb-3 mb-lg-0" data-aos="zoom-in">
-            <div class="card color-cards">
-              <div class="card-body p-0">
-                <div class="bg-primary text-center card-contents">
-                  <div class="card-image">
-                    <img src="images/Group95.svg" class="case-studies-card-img" alt="">
-                  </div>  
-                  <div class="card-desc-box d-flex align-items-center justify-content-around">
-                    <div>
-                      <h6 class="text-white pb-2 px-3">Online Marketing To Pump Sales</h6>
-                      <!-- <button class="btn btn-white">Read More</button> -->
-                    </div>
-                  </div>
-                </div>   
-                <div class="card-details text-center pt-4">
-                    <h6 class="m-0 pb-1">Online Marketing</h6>
-                    <p>SEO, Marketing, Advertisement</p>
-                </div>
-              </div>
+
+        <div class="row gy-4 mt-5 justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">
+              <i class="bi bi-display"></i>
+              <h3><a href="">Website</a></h3>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-3 stretch-card mb-3 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="card color-cards">
-              <div class="card-body p-0">
-                <div class="bg-warning text-center card-contents">
-                  <div class="card-image">
-                      <img src="images/Group108.svg" class="case-studies-card-img" alt="">
-                  </div>  
-                  <div class="card-desc-box d-flex align-items-center justify-content-around">
-                    <div>
-                      <h6 class="text-white pb-2 px-3">A Website That Suits Your Brand Profile</h6>
-                      <!-- <button class="btn btn-white">Read More</button> -->
-                    </div>
-                  </div>
-                </div>   
-                <div class="card-details text-center pt-4">
-                    <h6 class="m-0 pb-1">Web Development</h6>
-                    <p>Developing, Designing, Hosting</p>
-                </div>
-              </div>
+          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon-box">
+              <i class="bi bi-robot"></i>
+              <h3><a href="">AI</a></h3>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-3 stretch-card mb-3 mb-lg-0" data-aos="zoom-in" data-aos-delay="400">
-            <div class="card color-cards">
-              <div class="card-body p-0">
-                <div class="bg-violet text-center card-contents">
-                  <div class="card-image">
-                      <img src="images/Group126.svg" class="case-studies-card-img" alt="">
-                  </div>  
-                  <div class="card-desc-box d-flex align-items-center justify-content-around">
-                    <div>
-                      <h6 class="text-white pb-2 px-3">Host Exclusive Content On Your Website</h6>
-                      <!-- <button class="btn btn-white">Read More</button> -->
-                    </div>
-                  </div>
-                </div>   
-                <div class="card-details text-center pt-4">
-                    <h6 class="m-0 pb-1">Content Hosting</h6>
-                    <p>Video Streaming, Files Hosting</p>
-                </div>
-              </div>
+          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon-box">
+              <i class="bi bi-database"></i>
+              <h3><a href="">Hosting</a></h3>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-3 stretch-card" data-aos="zoom-in" data-aos-delay="600">
-            <div class="card color-cards">
-              <div class="card-body p-0">
-                <div class="bg-success text-center card-contents">
-                  <div class="card-image">
-                      <img src="images/Group115.svg" class="case-studies-card-img" alt="">
-                  </div>  
-                  <div class="card-desc-box d-flex align-items-center justify-content-around">
-                    <div>
-                      <h6 class="text-white pb-2 px-3">Get A Customized Software That Suits Your Needs</h6>
-                      <!-- <button class="btn btn-white">Read More</button> -->
-                    </div>
-                  </div>
-                </div>   
-                <div class="card-details text-center pt-4">
-                    <h6 class="m-0 pb-1">Software Development</h6>
-                    <p>Developing, Designing, Launching</p>
-                </div>
-              </div>
+          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="icon-box">
+              <i class="bi bi-search"></i>
+              <h3><a href="">SEO</a></h3>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="700">
+            <div class="icon-box">
+              <i class="bi bi-gem"></i>
+              <h3><a href="">Graphics</a></h3>
             </div>
           </div>
         </div>
-      </section>     
-      <section class="customer-feedback" id="feedback-section">
-        <div class="row">
-          <div class="col-12 text-center pb-5">
-            <h2>Portflio</h2>
-            <h6 class="section-subtitle text-muted m-0">Have A Glance At Our Work</h6>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 order-1 order-lg-2">
+            <img src="assets/img/about.png" class="img-fluid" alt="">
           </div>
-
-
-          <div class="owl-carousel owl-theme grid-margin" style="transform: scale(1.4);">
-            <div class="card customer-cards">
-              <div class="card-body">
-                <div class="text-center" style="overflow: hidden;">
-                  <img src="portfolio-img/10.png" height='150'>
-                
-                </div>
-              </div>
-            </div>
-
-
-              <div class="card customer-cards">
-                <div class="card-body">
-                  <div class="text-center" style="overflow: hidden;">
-                    <img src="portfolio-img/Blue and White Simple Minimalist Modern Travel Agency Website Desktop Prototype.png" height='150'>
-                  
-                  </div>
-                </div>
-              </div>
-
-              
-              <div class="card customer-cards">
-                <div class="card-body">
-                  <div class="text-center" style="overflow: hidden;">
-                    <img src="portfolio-img/12.png" height='150'>
-                  
-                  </div>
-                </div>
-              </div>
-
-              <div class="card customer-cards">
-                <div class="card-body">
-                  <div class="text-center" style="overflow: hidden;">
-                    <img src="portfolio-img/9.png" height='150'>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="card customer-cards">
-                <div class="card-body">
-                  <div class="text-center" style="overflow: hidden;">
-                    <img src="portfolio-img/Home (2).png" height='150'>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card customer-cards">
-                <div class="card-body">
-                  <div class="text-center" style="overflow: hidden;">
-                    <img src="portfolio-img/Home.png" height='150'>
-                  </div>
-                </div>
-              </div>
-                
-
-              
-              <div class="card customer-cards">
-                <div class="card-body">
-                  <div class="text-center" style="overflow: hidden;">
-                    <img src="portfolio-img/8.png" height='150'>
-                  </div>
-                </div>
-              </div>
-
-              
-              <div class="card customer-cards">
-                <div class="card-body">
-                  <div class="text-center" style="overflow: hidden;">
-                    <img src="portfolio-img/14.png" height='150'>
-                  
-                  </div>
-                </div>
-              </div>
+          <div class="col-lg-6 order-2 order-lg-1 content">
+            <h3>Leading Digital Agency <br>
+              for Business Solution.</h3>
+            <p class="fst-italic">
+              From Landing Pages To Content Monetization
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-all"></i> <span>Comprehensive digital strategies to enhance brand presence.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Advanced AI and SEO solutions to drive traffic and engagement.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Professional hosting, graphics, and content management for seamless online experiences.</span></li>
+            </ul>
+            <p>
+              We Offer All The Tools You Need To Reach A Wider Range of Customers Online, From Fully Managing Your Website, Making Your Brand Presence Online, To Content management And Monetization
+            </p>
+          </div>
         </div>
-      </section>
-      <section class="contact-us" id="contact-section">
-        <div class="contact-us-bgimage grid-margin" >
-          <div class="pb-4">
-            <h4 class="px-3 px-md-0 m-0" data-aos="fade-down">Do you have any projects?</h4>
-            <h4 class="pt-1" data-aos="fade-down">Contact us</h4>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 800
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 40
+                },
+                "480": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 60
+                },
+                "640": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 80
+                },
+                "992": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 120
+                }
+              }
+            }
+          </script>
+          <h1 style="text-align: center;">Tech We Use</h1>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/3.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/6.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/8.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/9.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/10.png" class="img-fluid" alt=""></div>
           </div>
-          <div data-aos="fade-up">
-            
-            <button class="btn btn-info" data-toggle="modal" data-target="#exampleModal">Contact Us</button>
-          </div>          
+          <!-- <div class="swiper-pagination"></div> -->
         </div>
-      </section>
-      <section class="contact-details" id="contact-details-section">
-        <div class="row text-center text-md-left">
-          <div class="col-12 col-md-6 col-lg-3 grid-margin">
-            <img src="images/logo-black.png" alt="" class="pb-2" height="50px">
-            <div class="pt-2">
-              <p class="text-muted m-0">contact@alactic.net</p>
-            </div>         
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 grid-margin">
-            
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 grid-margin">
-            <h5 class="pb-2">Our Guidelines</h5>
-            <a href="tos.html"><p class="m-0 pb-2">Terms</p></a>   
-            <a href="privacy.html"><p class="m-0 pt-1 pb-2">Privacy policy</p></a>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 grid-margin">
-              <h5 class="pb-2">Follow Our Socials</h5>
-              <div class="d-flex justify-content-center justify-content-md-start">
-                <a href="#"><span class="mdi mdi-twitter"></span></a>
-                <a href="#"><span class="mdi mdi-instagram"></span></a>
+
+      </div>
+
+    </section><!-- /Clients Section -->
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100"><img src="assets/img/features.png" alt=""></div>
+          <div class="col-lg-6">
+            <h1>One Stop for all your business needs.</h1>
+            <br>
+            <div class="features-item d-flex ps-0 ps-lg-3 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="100">
+              <i class="bi bi-brush"></i>
+              <div>
+                <h4>Website Design</h4>
+                <p>Get a website that reflects your brand.</p>
               </div>
+            </div><!-- End Features Item-->
+
+            <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="100">
+              <i class="bi bi-robot"></i>
+              <div>
+                <h4>AI</h4>
+                <p>Supercharge your business with an AI Buddy.</p>
+              </div>
+            </div><!-- End Features Item-->
+
+            <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="100">
+              <i class="bi bi-broadcast"></i>
+              <div>
+                <h4>Hosting</h4>
+                <p>99.99% Guranteed Uptime with our dedicated hosting for any need!</p>
+              </div>
+            </div><!-- End Features Item-->
+
+            <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="100">
+              <i class="bi bi-camera-reels"></i>
+              <div>
+                <h4>Graphic Designs</h4>
+                <p>Get the best content for your brand.</p>
+              </div>
+            </div><!-- End Features Item-->
+
           </div>
-        </div>  
-      </section>
-      <footer class="border-top">
-        <p class="text-center text-muted pt-4">Copyright © 2024<a href="https://www.alactic.net/" class="px-1">Alactic.</a>All rights reserved.</p>
-      </footer>
-      <!-- Modal for Contact - us Button -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title" id="exampleModalLabel">Contact Us</h4>
-              
+        </div>
+
+      </div>
+
+    </section><!-- /Features Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>Check our Services</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 dark-background" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon" style="background-color: white;">
+                <img width="50" height="50" src="https://img.icons8.com/ios/100/000000/laptop-coding.png" alt="laptop-coding"/>
+                <!-- <i class="bi bi-activity"></i> -->
+              </div>
+               
+              <a class="stretched-link">
+                 <!-- href='service-details.html' -->
+                <h3>Website Design & Development</h3>
+              </a>
+              <p>Custom websites that captivate and convert.</p>
             </div>
-            <div class="modal-body">
-              <form
-              action="https://formcarry.com/s/w4mtzeBLoi0"
-              method="POST">
-                <div class="form-group">
-                  <label for="Name">Name</label>
-                  <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
-                </div>
-                <div class="form-group">
-                  <label for="Email">Email</label>
-                  <input type="email" class="form-control" id="Email-1" placeholder="Email" name="email" required>
-                </div>
-                <div class="form-group">
-                  <label for="Message">Message</label>
-                  <textarea class="form-control" id="Message" placeholder="Enter your Message" name="message" required></textarea>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
-                  <button type="submit" class="btn btn-success">Submit</button>
-                </div>
-                <h5 class="modal-title" id="exampleModelLabel" style="padding-bottom: 30px;">Connect To us Via <a href="https://discord.com/users/673464245031272469"><img width="35" height="35" src="https://img.icons8.com/ios-filled/50/discord-logo.png" alt="discord-logo"/></a></h2>
-              </form>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 dark-background" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon" style="background-color: white;">
+                <img width="50" height="50" src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/external-hosting-seo-flatart-icons-outline-flatarticons.png" alt="external-hosting-seo-flatart-icons-outline-flatarticons"/>
+                <!-- <i class="bi bi-activity"></i> -->
+              </div>
+              <a class="stretched-link">
+                <h3>Hosting</h3>
+              </a>
+              <p>Reliable, fast, and secure web hosting solutions.</p>
             </div>
-            
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 dark-background" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon" style="background-color: white;">
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/speaker_1.png" alt="speaker_1"/>
+                <!-- <i class="bi bi-activity"></i> -->
+              </div>
+              <a class="stretched-link">
+                <h3>Marketing & Advertisement:</h3>
+              </a>
+              <p>Boost your brand with targeted marketing and effective ads.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 dark-background" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon" style="background-color: white;">
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/positive-dynamic--v1.png" alt="positive-dynamic--v1"/>
+                <!-- <i class="bi bi-activity"></i> -->
+              </div>
+              <a class="stretched-link">
+                <h3>SEO & Backlinks</h3>
+              </a>
+              <p>Improve rankings with expert SEO and quality backlinks.</p>
+              <a class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 dark-background" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon" style="background-color: white;">
+                <img width="50" height="50" src="https://img.icons8.com/material-sharp/50/artificial-intelligence.png" alt="artificial-intelligence"/>
+                <!-- <i class="bi bi-activity"></i> -->
+              </div>
+              <a class="stretched-link">
+                <h3>AI & ML</h3>
+              </a>
+              <p>Innovative AI and ML solutions for smarter business insights.</p>
+              <a class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 dark-background" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon" style="background-color: white;">
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/settings--v1.png" alt="settings--v1"/>
+                <!-- <i class="bi bi-activity"></i> -->
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Software Development</h3>
+              </a>
+              <p>Tailor-made software solutions to fit your unique needs.</p>
+              <a href="service-details.html" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Call To Action Section -->
+    <!-- <section id="call-to-action" class="call-to-action section dark-background"> -->
+
+      <!-- <img src="assets/img/cta-bg.jpg" alt=""> -->
+
+      <!-- <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-10">
+            <div class="text-center">
+              <h3>We got the tech covered for you!</h3>
+              <p>Providing Since 2022</p>
+              <a class="cta-btn" href="#">Connect with us</a>
+            </div>
           </div>
         </div>
       </div>
-    </div> 
-  </div>
-  <script src="vendors/jquery/jquery.min.js"></script>
-  <script src="vendors/bootstrap/bootstrap.min.js"></script>
-  <script src="vendors/owl-carousel/js/owl.carousel.min.js"></script>
-  <script src="vendors/aos/js/aos.js"></script>
-  <script src="js/landingpage.js"></script>
+
+    </section> -->
+
+
+
+    <!--REMOVED SECTION: remove.html-->
+
+
+
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Contact Us</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <img width="48" height="48" src="https://img.icons8.com/color/48/discord--v2.png" alt="discord--v2" style="margin-right: 10px;"/>
+              <div>
+                <h3>Discord</h3>
+                <p>Click <a href="https://discord.com/users/673464245031272469">Here</a> to connect with us on discord</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+              <img width="48" height="48" src="https://img.icons8.com/fluency/48/new-post.png" alt="new-post" style="margin-right: 10px;"/>
+              <div>
+                <h3>Email Us</h3>
+                <p>contact@alactic.net</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="https://formcarry.com/s/w4mtzeBLoi0"
+            method="POST"
+            enctype="multipart/form-data" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <!-- <div class="col-lg-4 col-md-6 footer-about"> -->
+            <!-- <a href="index.html" class="logo d-flex align-items-center">
+              <span class="sitename">Alactic</span>
+            </a> -->
+            <!-- <div class="social-links d-flex mt-4">
+              <a href=""><i class="bi bi-twitter-x"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div> -->
+          <!-- </div> -->
+
+          <!-- <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> Terms of service</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> Web Design</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> Web Development</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> Product Management</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> Marketing</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-12 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+            <form action="forms/newsletter.php" method="post" class="php-email-form">
+              <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+            </form> -->
+          <!-- </div> -->
+
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <div class="container text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Alactic</strong> <span>All Rights Reserved</span></p>
+        <div class="credits">
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
